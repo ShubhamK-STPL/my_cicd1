@@ -20,7 +20,7 @@ public class GoogleTest {
     @BeforeClass
     public static void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless"); // Uncomment for CI/CD
+       // options.addArguments("--headless"); // Uncomment for CI/CD
         options.addArguments("window-size=1920,1080");
         driver = new ChromeDriver(options);
         System.out.println("🔧 Browser launched");
